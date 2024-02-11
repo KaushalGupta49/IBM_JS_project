@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <title>Document</title>
+</head>
+
+<body class="overflow-x-hidden">
+    <nav class="flex justify-between items-center bg-slate-400">
+        <img src="images/travel-logo.svg" alt="logo" width="50px">
+        <ul class="flex">
+            <li class="mx-3"><a href="/travel_recommendations.html">Home</a></li>
+            <li class="mx-3"><a href="./about.html">About</a></li>
+            <li class="mx-3"><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="px-3 border rounded">
+            <input type="text" placeholder="Enter your Destination" id="searchBox">
+            <button class="border rounded p-1" id="searchBtn" onclick="Search()">Search</button>
+            <button class="border rounded p-1" id="clearBtn" onclick="Clear()">Clear</button>
+        </div>
+    </nav>
+    <section id="lookOutSec" class="flex flex-row justify-around"></section>
+    <main
+        style="background-image: url('images/bgImage.avif'); background-repeat: no-repeat; background-size: cover; height: 94vh;">
+        <div class="text-5xl text-white font-bold relative top-52 left-52">
+            <div>Explore</div>
+            <div>Dream</div>
+            <div>Destination</div>
+        </div>
+        <div class="text-lg text-white relative top-56 left-52 w-1/2">
+            "Welcome to [Travel Agency Name], your one-stop shop for all your travel needs. Whether you're looking for a
+            relaxing
+            beach vacation, an adventurous mountain getaway, or a cultural city break, we have the perfect trip for you.
+            Our team of experienced travel agents is passionate about helping you create unforgettable travel
+            experiences. We'll
+            work with you to understand your budget, interests, and travel style, and then we'll put together a
+            personalized
+            itinerary that's perfect for you.
+        </div>
+
+    </main>
+
+    <script src="travel_recommendations.js"></script>
+</body>
+
+</html>
